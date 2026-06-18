@@ -1,0 +1,6 @@
+@media (min-width: 1440px) {
+   .page-billing-services .po-cta-subtitle {
+        font-size: 17px;
+        max-width: 805px;
+    }
+}

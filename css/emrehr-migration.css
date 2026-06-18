@@ -1,0 +1,227 @@
+
+ /* ================= MIGRATION SUPPORT SECTION ================= */
+
+.migration-section {
+  background: #F5F5F5;
+  padding: 80px 0 60px;
+}
+
+.migration-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.migration-title {
+  font-family: Manrope;
+  font-size: 34px;
+  font-weight: 400;
+  color: #393F44;
+  margin-bottom: 12px;
+}
+
+/* ---- Logo Grid ---- */
+.migration-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  margin: 0 auto 60px;
+  padding: 0 16px;
+}
+
+.migration-vendor-card {
+  background:none;
+  border:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px 24px;
+  height: 100px;
+  cursor: pointer;
+  transition: none;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Grayscale filter by default */
+.migration-vendor-card img {
+  width: 365px;
+  height: 109px;
+  object-fit: contain;
+  filter: grayscale(100%) opacity(0.7);
+  transition: filter 0.3s ease, transform 0.25s ease;
+}
+
+/* On hover: color restored */
+.migration-vendor-card:hover img {
+  filter: grayscale(0%) opacity(0.7);
+}
+
+.migration-vendor-card:hover {
+ background: transparent;
+ border-color: transparent;              
+  box-shadow: none;                         
+  transform: none;                          
+}
+
+/* ---- "Can't find your vendor" CTA ---- */
+.migration-cta-box {
+  text-align: center;
+  padding: 48px 24px 0;
+}
+
+.migration-cta-box h3 {
+  font-family: Manrope;
+  font-size: 40px;
+  font-weight: 400;
+  color: #2878C8;
+  line-height: 1.35;
+  margin-bottom: 16px;
+}
+
+.migration-cta-box p {
+  font-family: Manrope;
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+.migration-cta-box .btn-migration {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 40px;
+  border-radius: 8px;
+  background: #2878C8;
+  color: #fff;
+  font-family: Manrope, sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+.migration-cta-box .btn-migration:hover {
+  box-shadow: 0 6px 20px rgba(40, 120, 200, 0.3);
+  color: #fff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:1200px){
+    .migration-cta-box .btn-migration{
+        display:none;
+    }
+}
+
+@media (max-width: 992px) {
+     .migration-section {
+    padding: 80px 0 30px;
+  }
+  .migration-title {
+    font-size: 29px;
+  }
+
+  .migration-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    padding-top:50px;
+    margin-bottom: 90px;
+  }
+
+  .migration-vendor-card {
+    padding: 20px 14px;
+    height: 80px;
+  }
+
+  .migration-vendor-card img {
+    width: 400px;
+    height: 120px;
+  }
+
+  .migration-cta-box h3 {
+    font-size: 30px;
+  }
+
+  .migration-cta-box p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .migration-section {
+    padding: 50px 0 20px;
+  }
+
+  .migration-title {
+    font-size: 24px;
+  }
+
+  .migration-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 65px;
+    max-width: 480px;
+  }
+
+  .migration-vendor-card {
+    height: 72px;
+    padding: 16px 12px;
+  }
+
+  .migration-vendor-card img {
+    width: 400px;
+    height: 120px;
+  }
+
+  .migration-cta-box h3 {
+    font-size: 27px;
+  }
+
+  .migration-cta-box p {
+    font-size: 15px;
+  }
+
+  .migration-cta-box .btn-migration {
+    font-size: 15px;
+    padding: 11px 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .migration-title{
+    padding:32px;
+  }
+  .migration-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 72px;
+    max-width: 340px;
+  }
+
+  .migration-vendor-card {
+    height: 64px;
+    padding: 12px 10px;
+  }
+
+  .migration-vendor-card img {
+    width: 375px;
+    height: 112px;
+  }
+
+  .migration-cta-box {
+    padding: 48px 0px 0;
+}
+
+*,
+
+  .migration-cta-box h3 {
+    font-size: 16px;
+  }
+}
+
+.page-emrehr-migration .po-cta-title {
+     font-size: 45px;
+     color: #393F44;
+ }

@@ -1,0 +1,477 @@
+/* ═══════════════════════════════════════════════════
+   WHO WE SERVE — HERO SECTION
+   ═══════════════════════════════════════════════════ */
+
+.wws-hero {
+  padding-top:50px;
+  position: relative;
+  background: #F6FAFE;
+  overflow: visible; /* shadow must not be clipped */
+}
+
+.wws-hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-height: 55vh;
+}
+
+/* ── Left: text column ── */
+.wws-hero-text {
+  flex: 0 0 52%;
+  max-width: 52%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  padding-right: 40px;
+  position: relative;
+  z-index: 2;
+}
+
+.wws-hero-title {
+  font-family: Manrope, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  color: #393F44;
+  line-height: 1.2;
+  margin-bottom: 22px;
+}
+
+.wws-hero-desc {
+  font-family: Manrope;
+  font-size: 18px;
+  color: #666666;
+  line-height: 1.8;
+  margin-bottom: 36px;
+  font-weight: 400;
+}
+
+.wws-hero-btns {
+  display: flex;
+  gap: 16px;
+}
+
+/* ── Right: image —  ── */
+.wws-hero-img-wrap {
+  position: absolute;
+  top: 50px;      
+  bottom: 0;
+  right: 0;
+  left: 52%;      
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  border-radius: 14px 0 0 0;
+  overflow: hidden;
+  box-shadow:
+    -8px -8px 24px rgba(0, 0, 0, 0.14),
+    -4px  0px 12px rgba(0, 0, 0, 0.08);
+  z-index: 1;
+}
+
+.wws-hero-img-wrap img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════════════════ */
+
+@media (min-width: 1920px) {
+  .wws-hero .container { min-height:60vh; }
+  .wws-hero-title      { font-size: 58px; }
+  .wws-hero-text       { flex: 0 0 48%; max-width: 48%; padding-top: 80px; padding-bottom: 80px; }
+  .wws-hero-img-wrap   { left: 54%; top: 55px; }
+}
+
+@media (min-width: 1600px) and (max-width: 1919px) {
+  .wws-hero .container { min-height: 60vh; }
+  .wws-hero-title      { font-size: 54px; }
+  .wws-hero-text       { flex: 0 0 50%; max-width: 50%; }
+  .wws-hero-img-wrap   { left: 51%; top: 52px; }
+}
+
+@media (min-width: 1440px) and (max-width: 1599px) {
+  .wws-hero .container { min-height: 60vh; }
+  .wws-hero-title      { font-size: 50px; }
+  .wws-hero-text       { flex: 0 0 50%; max-width: 50%; }
+  .wws-hero-img-wrap   { left: 52%; top: 50px; }
+}
+
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .wws-hero .container { min-height: 60vh; }
+  .wws-hero-title      { font-size: 46px; }
+  .wws-hero-img-wrap   { left: 53%; top: 50px; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .wws-hero .container { min-height: 40vh; }
+  .wws-hero-title      { font-size: 38px; }
+  .wws-hero-desc       { font-size: 16px; }
+  .wws-hero-text       { flex: 0 0 55%; max-width: 55%; padding-top: 50px; padding-bottom: 50px; padding-right: 30px; }
+  .wws-hero-img-wrap   { left: 55%; top: 44px; border-radius: 12px 0 0 0; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .wws-hero .container { min-height: 0vh; }
+  .wws-hero-title      { font-size: 37px; }
+  .wws-hero-desc       { font-size: 16.5px; margin-bottom: 24px; }
+  .wws-hero-text       { flex: 0 0 57%; max-width: 57%; padding-top: 40px; padding-bottom: 40px; padding-right: 24px; }
+  .wws-hero-img-wrap   { left: 57%; top: 40px; border-radius: 10px 0 0 0; }
+}
+
+@media (max-width: 767px) {
+  .wws-hero            { padding: 40px 0; overflow: hidden; }
+  .wws-hero .container { display: block; min-height: unset; }
+  .wws-hero-text       { flex: none; max-width: 100%; padding: 0;  }
+  .wws-hero-title      { font-size: 37px; }
+  .wws-hero-desc       { font-size: 16.5px; }
+  .wws-hero-btns       { display:none }
+  .wws-hero-img-wrap   { display: none !important; }
+}
+
+@media (max-width: 480px) {
+  .wws-hero-title { font-size: 30px; text-align:left;  }
+  .wws-hero-desc  { font-size: 16px; text-align:left;  }
+  .wws-hero { padding-top: 10px; padding-bottom: 0px;}
+  .pc-heading {font-size: 24px!important; margin-bottom:15px!important; }
+}
+
+@media(max-width: 1199px){
+  .wws-hero-btns {
+    display:none;
+  }
+}
+
+@media(max-width:992px){
+.wws-hero-img-wrap img{
+  display: none;
+}
+.wws-hero-img-wrap{
+  display: none;
+}
+  .wws-hero-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding-right:0;
+  }
+
+  .wws-hero {
+    padding-top: 0px;
+    font-size:17px;
+  }
+}
+
+/* ===========================PRIMARY CARE PROVIDER SECTION START======================= */
+
+/* =================================
+   PRIMARY CARE PROVIDERS SECTION
+================================= */
+
+.primary-care-section{
+/* background:#F6FAFE; */
+padding-top:80px ;
+text-align:center;
+}
+
+.pc-heading{
+font-family:Manrope;
+font-size:56px;
+font-weight:400;
+color:#2878C8;
+margin-bottom:25px;
+}
+
+.pc-description{
+font-family:Manrope;
+/* max-width:900px; */
+font-weight: 400;
+margin:0 auto 15px;
+font-size:20px;
+color:#666666;
+line-height:1.7;
+}
+
+/* cards wrapper */
+
+.pc-cards{
+display:flex;
+justify-content:center;
+gap:25px;
+margin-top:60px;
+flex-wrap:wrap;
+}
+
+/* individual card */
+
+.pc-card{
+width:200px;
+height:220px;
+background:white;
+border:1px solid #E0FFFD;
+border-radius:20px;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+padding:30px 20px;
+transition:0.3s;
+/* box-shadow:0 10px 25px rgba(0, 0, 0, 0.01); */
+box-shadow:0 6px 15px rgba(224,255,253,0.1);
+}
+
+/* icon */
+
+.pc-card img{
+width:75px;
+height:75px;
+margin-bottom:20px;
+}
+
+/* text */
+
+.pc-card p{
+line-height: 150%;
+font-weight: 400;
+font-family:Manrope;
+font-size:20px;
+color:#666666;
+margin:0;
+}
+
+
+
+/* ===============================
+   TABLET
+================================ */
+
+@media (max-width:991px){
+
+.pc-heading{
+font-size:36px;
+}
+
+.pc-description{
+font-size:16px;
+}
+
+.pc-card{
+width:180px;
+height:200px;
+}
+
+}
+
+/* ===============================
+   MOBILE (2 cards per row)
+================================ */
+
+@media (max-width:768px){
+
+.pc-cards{
+justify-content:center;
+gap:20px;
+}
+
+.pc-cards p{
+  font-size: 17px;
+}
+
+.pc-card{
+width:45%;
+height:200px;
+}
+
+.pc-heading{
+font-size:30px;
+}
+
+.pc-description{
+font-size:15px;
+}
+.page-who-we-serve .feature-section .feature-title{
+  margin-bottom: 6px !important;;
+}
+ .page-who-we-serve .feature-description{
+  margin-bottom:33px;
+ }
+
+
+}
+
+@media(min-width:768px){
+  .pc-cards{
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:0 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .primary-care-section{
+    padding: 40px 0px;
+  }
+  .pc-description{
+    font-size: 16px;
+  }
+
+  .page-who-we-serve .feature-section{
+    padding-top: 30px;
+  }
+  
+  .page-who-we-serve .po-img-feature2 .feature-image img{
+    width:100%;
+    max-width:100%;
+    max-height:100%;
+}
+}
+
+/* ===========================PRIMARY CARE PROVIDER SECTION END======================== */
+
+.page-who-we-serve .feature-image img {
+     max-width: 100%;
+  height: auto;
+}
+
+
+.page-who-we-serve .wwsfeature2{
+  width: 43%;
+  max-width: 104%;
+  max-height: 100%;
+}
+
+/* ================= SPECIALITY SECTION ================= */
+
+.speciality-section{
+background-color:#f5f5f5;
+padding:80px 0 160px;
+text-align:center;
+}
+
+.speciality-heading{
+font-family:Manrope;
+font-size:56px;
+font-weight:400;
+color:#2878C8;
+margin-bottom:20px;
+}
+
+.speciality-desc{
+font-family: "Manrope";
+font-weight:400;
+font-size:20px;
+color:#666;
+margin:auto;
+line-height:1.7;
+}
+
+/* rounded container */
+
+.speciality-box{
+background:white;
+border-radius:22px;
+padding:50px 40px;
+margin-top:50px;
+}
+
+/* grid */
+
+.speciality-grid{
+display:grid;
+grid-template-columns:repeat(6,1fr);
+gap:90px 57px;
+width:100%;
+}
+
+/* item */
+
+.speciality-item{
+text-align:center;
+}
+
+.speciality-item img{
+width: calc(24px + 1.875vw) !important;
+    height: calc(24px + 1.875vw) !important;
+margin-bottom:12px;
+}
+
+.speciality-item p{
+font-family:"Manrope";
+font-size:18px;
+color:#666;
+margin:0;
+}
+
+/* ================================== */
+
+@media (max-width:1200px){
+
+.speciality-grid{
+grid-template-columns:repeat(4,1fr);
+gap:50px 25px;
+}
+
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:768px){
+
+.speciality-heading{
+font-size:32px;
+}
+
+.speciality-desc{
+font-size:16px;
+}
+
+.speciality-box{
+padding:40px 25px;
+}
+
+.speciality-grid{
+grid-template-columns:repeat(2,1fr);
+gap:35px;
+}
+
+.speciality-item p {
+  font-size: 13px!important;
+}
+
+
+}
+@media(max-width:480px){
+  .speciality-section {
+    padding: 40px 0px 80px;
+  }
+      .speciality-heading {
+        font-size: 26px;
+    }
+}
+
+/* Prevent hero image from creating horizontal overflow */
+/* .wws-hero{
+  position: relative;
+  overflow-x: hidden;
+}
+
+.wws-hero-img-wrap{
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.wws-hero-img-wrap img{
+  width: 100%;
+  height: auto;
+  display: block;
+} */

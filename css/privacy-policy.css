@@ -1,0 +1,122 @@
+/* ================= PRIVACY POLICY ================= */
+
+.privacy-section {
+  padding: 80px 0;
+  font-family: "Manrope", sans-serif;
+  background-color: #fff;
+}
+
+/* Header */
+.privacy-header {
+  margin-bottom: 40px;
+}
+
+.privacy-title {
+  font-size: 34px;
+  font-weight: 700;
+  color: #2878C8;
+  text-decoration: underline;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Blocks */
+.privacy-block {
+  margin-bottom: 40px;
+}
+
+.privacy-heading {
+  font-size: 24px;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 700;
+  color: #2878C8;
+  margin-bottom: 16px;
+  text-decoration: underline;
+}
+
+/* Sub Sections */
+.privacy-sub-block {
+  margin-top: 20px;
+}
+
+.privacy-subheading {
+  font-size: 21px;
+  font-family: 'Barlow', sans-serif;
+  text-decoration: underline;
+  font-weight: 600;
+  color: #2878C8;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.privacy-text {
+  font-size: 16px;
+  font-family: "proxima-nova", sans-serif;
+  color: #4d5156;
+  line-height: 30px;
+}
+
+/* List */
+.privacy-list {
+  padding-left: 40px;
+  margin-top: 10px;
+}
+
+.privacy-list li {
+  font-size:16px;
+    font-family: "proxima-nova", sans-serif;
+    color: #4D5156;
+    margin-bottom: 16px;
+}
+
+.privacy-subtext{
+    font-size:16px;
+    font-family: "proxima-nova", sans-serif;
+    color: #4D5156;
+    margin-bottom: 5px;
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .privacy-title {
+    font-size: 26px;
+  }
+
+  .privacy-heading {
+    font-size: 20px;
+  }
+
+  .privacy-subheading {
+    font-size: 18px;
+  }
+
+  .privacy-text {
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .privacy-section {
+    padding: 50px 15px;
+  }
+
+  .privacy-title {
+    font-size: 22px;
+  }
+
+  .privacy-heading {
+    font-size: 18px;
+  }
+
+  .privacy-subheading {
+    font-size: 16px;
+  }
+
+  .privacy-text {
+    font-size: 14px;
+  }
+
+  .privacy-list li {
+    font-size: 14px;
+  }
+}

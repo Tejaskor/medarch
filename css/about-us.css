@@ -1,0 +1,247 @@
+.page-about-us .po-cta-section {
+  margin-top: 0px;
+  padding-top: 42px;
+  padding-bottom: 8px;
+}
+
+.page-about-us .po-cta-subtitle {
+  margin: 0px 5px 30px;
+  max-width: 100%;
+}
+
+/* ═══════════════════════════════════════════════════
+   ABOUT US — HERO SECTION
+   ═══════════════════════════════════════════════════ */
+
+.au-hero {
+  position: relative;
+  background-color: #ffffff;
+  overflow: visible;
+  min-height: 30vh;
+}
+
+/* ── Desktop background image (≥768px) ── */
+.au-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1024px;          
+  background-image: url("https://www.medarch.com/assets/images/about/background-image-about-us.png");
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* ── Container ── */
+.au-hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-height: 220px;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+/* ── Text column ── */
+.au-hero-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ── Breadcrumb ── */
+.au-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 28px;
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  color: #666666;
+  flex-wrap: wrap;
+  text-decoration-line: none;
+}
+
+.au-breadcrumb-link {
+  color: #2878C8;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.au-breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.au-breadcrumb-sep {
+  color: #666666;
+  margin: 0 6px;
+}
+
+.au-breadcrumb-current {
+  color: #666666;
+  font-weight: 400;
+}
+
+/* ── Title ── */
+.au-hero-title {
+  padding-top:80px;
+  font-family: Manrope, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  color: #393F44;
+  line-height: 1.2;
+  margin-bottom: 26px;
+}
+
+/* ── Subtitle ── */
+.au-hero-subtitle {
+  font-family: Manrope, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — 1440–1599px
+   ═══════════════════════════════════════════════════ */
+@media (min-width: 1440px) {
+  .au-hero-title   { font-size: 60px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — 1200–1439px
+   ═══════════════════════════════════════════════════ */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .au-hero-text    { flex: 0 0 57%; max-width: 57%; }
+  .au-hero-title   { font-size: 60px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — Small Laptop / Tablet Landscape (992–1199px)
+   ═══════════════════════════════════════════════════ */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .au-hero .container { min-height: 200px; }
+  .au-hero-title      { font-size: 41px; }
+  .au-hero-subtitle   { font-size: 23px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — Tablet Portrait (768–991px)
+   ═══════════════════════════════════════════════════ */
+@media (min-width: 768px) and (max-width: 991px) {
+  .au-hero .container { min-height: 180px; padding-top: 30px; padding-bottom: 30px; }
+  .au-hero-text       { flex: 0 0 65%; max-width: 65%; }
+  .au-hero-title      { font-size: 37px; }
+  .au-hero-subtitle   { font-size: 20px; }
+  .au-breadcrumb      { margin-bottom: 20px; font-size: 17px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — Mobile (<768px)
+   Full-width background image, title + subtitle below
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 767px) {
+
+  .au-hero {
+    background-color: #f5f8fc;
+    padding: 0;
+    min-height: unset;
+    overflow: visible;
+  }
+
+  /* Hide the desktop pseudo-element background */
+  .au-hero::after {
+    display: none;
+  }
+
+  /* Mobile full-width image block */
+  .au-hero-mobile-img {
+    display: block !important;
+    width: 100%;
+    height: 340px;
+    background-image: url("https://www.medarch.com/assets/images/about/about_us_mobile_bg_image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Breadcrumb overlaid on the image */
+  .au-hero-mobile-img .au-breadcrumb {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .au-hero .container {
+    display: block;
+    min-height: unset;
+    padding-top: 28px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
+
+  .au-hero-text .au-breadcrumb {
+    display: none;
+  }
+
+  .au-hero-text {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .au-hero-title {
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-top:10px;
+  }
+
+  .au-hero-subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+/* Hide mobile image block on desktop */
+.au-hero-mobile-img {
+  display: none;
+}
+
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — Small Mobile (≤480px)
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .au-hero-mobile-img {
+    height: 280px;
+  }
+
+  .au-hero-title    { font-size: 26px; }
+  .au-hero-subtitle { font-size: 15px; }
+
+  .au-hero .container {
+    padding-top: 22px;
+    padding-bottom: 26px;
+  }
+}
+
+@media (max-width: 1199px) {
+   section.medarch-footer.about-us-footer {
+      padding-bottom: 100px !important;
+   }
+}

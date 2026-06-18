@@ -1,0 +1,469 @@
+.page-about-us .po-cta-section {
+  margin-top: 0px;
+  padding-top: 42px;
+  padding-bottom: 8px;
+}
+
+.page-about-us .po-cta-subtitle {
+  margin: 0px 5px 30px;
+  max-width: 100%;
+}
+
+/* ═══════════════════════════════════════════════════
+   CONTACT US — HERO SECTION
+   ═══════════════════════════════════════════════════ */
+
+.cu-hero {
+  position: relative;
+  background-color: #ffffff;
+  overflow: visible;
+  min-height: 50vh;
+}
+
+/* ── Desktop background image (≥768px) ── */
+.cu-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 1024px;           
+  background-image: url("https://www.medarch.com/assets/images/contact/background-image-contact-us.png");
+  background-size: auto 100%;
+  background-position: right center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+/* ── Container ── */
+.cu-hero .container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  min-height: 220px;
+  padding-top: 25px;
+  padding-bottom: 100px;
+}
+
+/* ── Text column ── */
+.cu-hero-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ── Breadcrumb ── */
+.cu-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  margin-bottom: 28px;
+  font-family: Manrope, sans-serif;
+  font-size: 20px;
+  color: #666666;
+  flex-wrap: wrap;
+  text-decoration-line: none;
+}
+
+.cu-breadcrumb-link {
+  color: #2878C8;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.cu-breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.cu-breadcrumb-sep {
+  color: #666666;
+  margin: 0 6px;
+}
+
+.cu-breadcrumb-current {
+  color: #666666;
+  font-weight: 400;
+}
+
+/* ── Title ── */
+.cu-hero-title {
+  padding-top:80px;
+  font-family: Manrope, sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  color: #393F44;
+  line-height: 1.2;
+  margin-bottom: 26px;
+}
+
+/* ── Subtitle ── */
+.cu-hero-subtitle {
+  font-family: "Manrope";
+  font-size: 28px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 1.7;
+  margin: 0;
+}
+
+
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — 1440–1599px
+   ═══════════════════════════════════════════════════ */
+@media (min-width: 1440px) {
+  .cu-hero-title   { font-size: 60px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — 1200–1439px
+   ═══════════════════════════════════════════════════ */
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .cu-hero-text    { flex: 0 0 57%; max-width: 57%; }
+  .cu-hero-title   { font-size: 60px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — Small Laptop / Tablet Landscape (992–1199px)
+   ═══════════════════════════════════════════════════ */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .cu-hero .container { min-height: 200px; }
+  .cu-hero-title      { font-size: 41px; }
+  .cu-hero-subtitle   { font-size: 23px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — Tablet Portrait (768–991px)
+   ═══════════════════════════════════════════════════ */
+@media (min-width: 768px) and (max-width: 991px) {
+  .cu-hero .container { min-height: 180px; padding-top: 30px; padding-bottom: 30px; }
+  .cu-hero-text       { flex: 0 0 65%; max-width: 65%; }
+  /* .cu-hero::after     { width: 100%; } */
+  .cu-hero-title      { font-size: 37px; }
+  .cu-hero-subtitle   { font-size: 20px; }
+  .cu-breadcrumb      { margin-bottom: 20px; font-size: 17px; }
+}
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — Mobile (<768px)
+   Full-width background image, title + subtitle below
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 767px) {
+
+  .cu-hero {
+    background-color: #f5f8fc;
+    padding: 0;
+    min-height: unset;
+    overflow: visible;
+  }
+
+  /* Hide the desktop pseudo-element background */
+  .cu-hero::after {
+    display: none;
+  }
+
+  /* Mobile full-width image block */
+  .cu-hero-mobile-img {
+    display: block !important;
+    width: 100%;
+    height: 340px;
+    background-image: url("https://www.medarch.com/assets/images/contact/contact_us_mobile_bg_image.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Breadcrumb overlaid on the image */
+  .cu-hero-mobile-img .cu-breadcrumb {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    z-index: 2;
+  }
+
+  .cu-hero .container {
+    display: block;
+    min-height: unset;
+    padding-top: 28px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+
+  
+  .cu-hero-text .cu-breadcrumb {
+    display: none;
+  }
+
+  .cu-hero-text {
+    flex: none;
+    max-width: 100%;
+  }
+
+  .cu-hero-title {
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-top:10px;
+  }
+
+  .cu-hero-subtitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cu-breadcrumb  {  font-size: 17px; } 
+}
+
+/* Hide mobile image block on desktop */
+.cu-hero-mobile-img {
+  display: none;
+}
+
+
+/* ═══════════════════════════════════════════════════
+   RESPONSIVE — Small Mobile (≤480px)
+   ═══════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+  .cu-hero-mobile-img {
+    height: 280px;
+  }
+
+  .cu-hero-title    { font-size: 26px; }
+  .cu-hero-subtitle { font-size: 15px; }
+
+  .cu-hero .container {
+    padding-top: 22px;
+    padding-bottom: 26px;
+  }
+}
+
+/* SECTION BACKGROUND */
+.contact-section {
+  background-color: #ffffff;
+}
+
+/* CARD STYLE */
+.contact-card {
+  background: #FFF;
+  padding: 48px;
+  border-radius: 24px;
+  border:1px solid var(--Stroke-1, #E0E0E0);
+  /* box-shadow: 0 0 0 1px rgba(0,0,0,0.05); */
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.05);
+}
+
+/* TITLES */
+.card-title {
+  font-size: 38px;
+  color: #2878C8;
+  margin-bottom: 20px;
+  font-family: "Manrope";
+  font-weight: 400;
+  padding-top:44px;
+}
+
+.form-title {
+  font-size: 47px;
+  font-family: "Manrope";
+  font-weight: 300!important;
+  color: #2878C8;
+  margin-bottom: 10px;
+  padding-bottom:20px;
+  letter-spacing: -2.4px;
+}
+
+.contact-card.form-card .form-subtitle {
+  font-size:18px!important;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* FORM */
+.form-control {
+  height: 48px;
+  border-radius: 6px;
+  background-color: #f5f8fa;
+   border: 1px solid #ced4da;
+}
+
+
+.form-require{
+    color:red;
+}
+
+/* BUTTON */
+.btn-primary {
+  background-color: #2878C8;
+  border: none;
+  padding: 12px;
+  font-weight: 700;
+}
+
+.form-card {
+    background-color: #F0F0F0;
+    padding-top:70px;
+}
+
+.contact-card p {
+    font-size: 20px!important;
+    font-family: "Manrope";
+    color: #666666;
+    font-weight:400;
+}
+
+.form-label {
+    font-family:"Manrope";
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.form-control,
+.form-control:focus {
+  background-color: #f5f8fa !important;
+}
+
+/* FOCUS (blue) */
+.form-control:focus {
+  border-color: #2878C8;
+  box-shadow: none;
+}
+
+/* ERROR */
+.error {
+  border-color: #c87872 !important;
+}
+
+/* ERROR TEXT */
+.error-text {
+  display: none;
+  color: #f2545b;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* SHOW ERROR */
+.show-error .error-text {
+  display: block;
+}
+.custom-btn {
+  font-size:18px;
+  font-family: "Manrope";
+  display: block;
+  margin: 20px auto 0;  
+  width: auto;          
+  padding: 10px 24px;   
+  border-radius: 6px;
+}
+
+textarea.form-control {
+  height: 70px;   
+  resize: none;    
+}
+
+.custom-btn:hover,
+.custom-btn:focus,
+.custom-btn:active {
+  background-color: #2878C8 !important;
+  border-color: #2878C8 !important;
+  box-shadow: none !important;
+}
+
+.form-control::placeholder {
+  color: #999;
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+/* ================= RESPONSIVE ================= */
+
+/* TABLET (<992px) */
+@media (max-width: 991px) {
+
+  .contact-card {
+    padding: 25px;
+  }
+
+  .form-title {
+    font-size: 32px;
+  }
+
+  .card-title {
+    font-size: 26px;
+  }
+
+  /* IMPORTANT: STACK EVERYTHING FULL WIDTH */
+  .col-lg-6 {
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 576px) {
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .form-title {
+    font-size: 26px;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+}
+.contact-section .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-card {
+  flex: 1;
+}
+
+/* THANKYOU FOR FILLING THE FORM */
+.success-container {
+  background: #F0F0F0;
+  border-radius: 24px;
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.success-title {
+  font-family: "Manrope";
+  font-size: 47px;
+  font-weight: 300;
+  color: #2878C8;
+  margin-bottom: 10px;
+  letter-spacing: -2px;
+}
+
+.success-subtitle {
+  font-family: "Manrope";
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 40px;
+}
+
+.success-gif img {
+      height: 333px;
+    width: 250px;
+}
+
+.success-text {
+  font-family: "Manrope";
+  font-size: 17px;
+  color: #33475b;
+  font-weight: 500;
+}
+
+.success-desc {
+  font-family: "Manrope";
+  font-size: 17px;
+  color: #666;
+}
